@@ -405,6 +405,24 @@ footer {
   }
 }
 
+@media (max-width: 300px) {
+
+  .toggle-btn {
+    display: block;
+    margin-left: 250px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #1d1d1d, #333);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
 
 /*****Cart.html*****/
 

@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #212121, #212121);
+}
+
+body {
+  transition: margin-left 0.5s;
+}
+
+.nav {
+  background: black;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+  margin-left: 550px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #198754;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+.side-nav {
+  text-align: center;
+  height: 100%;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #000000, #222222);
+  overflow-x: hidden;
+  padding-top: 20px;
+  }
+  
+  .side-nav a {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #818181;
+    border-bottom: 1px solid transparent;
+    padding: 6px 8px 6px 16px;
+
+  }
+  
+  .side-nav a:hover {
+    color: white;
+    margin-bottom: 5px;
+  }
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+/*Home*/
+#home {
+    padding-left: 10%;
+    background: url(Images/home.jpg);
+    filter: opacity(80%);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Optional background overlay to darken */
+  #home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    z-index: 1;
+  }
+  
+  /* Adjust text position above overlay */
+  #home * {
+    position: relative;
+    z-index: 2;
+  }
+
+#home h1 {
+  font-size: 100px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home p {
+  font-size: 18px;
+  color: #A0C4FF;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+#home .input-group {
+  width: 40%;
+  height: 45px;
+}
+
+.signin {
+  background: #198754 !important;
+  color: white !important;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sign {
+  background: rgb(247, 3, 64) !important;
+  color: white !important;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+/******About******/
+
+#about { 
+  padding-left: 5%;
+  background: linear-gradient(to bottom, #0E0300, #007F00);
+}
+
+#about h1 {
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+}
+
+#about p {
+  color: white;
+}
+
+/******Product******/
+
+#product {
+  background: linear-gradient(to bottom, #007E00, #1c2714);
+}
+
+#product h1 {
+font-size: 50px;
+letter-spacing: 2px;
+font-weight: 700;
+}
+
+#product img {
+width: 200px;
+height: 200px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+width: 300px;
+border: none !important;
+box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px white;  
+border-radius: 20px !important;
+overflow: hidden;
+justify-content: center;
+align-items: center;
+margin: 20px 60px;
+}
+
+.card:hover {
+box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 10px white;
+}
+
+#contact img {
+padding-left: 10%;
+height: 100%;
+}
+
+.box {
+width: 80% !important;
+
+margin-top: 10px;
+}
+
+#contact input {
+margin: 10px 0px;
+}
+
+#contact textarea {
+margin: 10px 0px;
+}
+/*****Deal Of The Week*****/
+
+.deal_ofthe_week {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0%;
+  background: linear-gradient(to bottom, #1c2714, #001700 );
+}
+
+.deal_ofthe_week_img {
+  position: relative;
+  margin-left: 80px;
+  height: 300px;
+  width: 500px;
+}
+
+
+
+
+
+.deal_ofthe_week_img img {
+  height: 100%;
+  border-radius: 8%;
+  filter: brightness(60%);
+  border: 5px solid #f0e68c;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.deal_ofthe_week_content {
+  height: 100%;
+  color: #FFFFFF;
+}
+
+.section_title {
+  display: inline-block;
+  text-align: center;
+}
+
+.section_title h2 {
+  display: inline-block;
+}
+
+.section_title::after {
+  display: block;
+  position: absolute;
+  top: calc(100% + 13px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+}
+
+.timer {
+  margin-top: 66px;
+}
+
+.timer li {
+  display: lnline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 10px;
+}
+
+.timer li:last-child {
+  margin-right: 0px;
+}
+
+.timer_num {
+  font-size: 38px;
+  font-weight: 600;
+  color: #fe4c50;
+  margin-top: 10px;
+}
+
+.timer_unit {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #51545f;
+}
+
+.deal_of_the_week_button {
+  width: 140px;
+  background: #1e1e27;
+  margin-top: 15px;
+}
+
+.deal_of_the_week_button:hover {
+  background: #1e1e27 !important;
+}
+
+/*****Contact*****/
+#contact{
+  background: linear-gradient(to bottom, #001700, #141313 );
+}
+
+.img-fluid{
+border-radius: 20px;
+filter: opacity(60%);
+}
+
+.contact-h1{
+  color: #FFFFFF;
+}
+
+/*****Footer*****/
+
+footer {
+  position: fixed;
+  font-size: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #222222;
+  color: white;
+  padding: 1px 0;
+}
+
+/*****Responsing*****/
+@media (max-width: 768px) {
+  
+  .brand {
+    margin-left: 100px;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: block;
+    margin-left: 450px;
+    margin-top: -30px; 
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #1d1d1d, #333);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+    .toggle-btn:hover {
+        background: linear-gradient(45deg, #444, #555);
+        transform: scale(1.05);
+    }
+
+    .toggle-btn:active {
+        background: linear-gradient(45deg, #000, #111);
+        transform: scale(0.98);
+    }
+  section {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content {
+    margin-left: 0; 
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  body {
+    padding-left: 10%;
+  }
+  .deal_ofthe_week .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .deal_ofthe_week_img, .deal_ofthe_week_content {
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+
+/*****Cart.html*****/
+
+.cart-h1{
+  color: #fff;
+}

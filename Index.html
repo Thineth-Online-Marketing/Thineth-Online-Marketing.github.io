@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thineth Online Marketing</title>
+        <link rel="icon" href="Images/spicy-food (1).png"/>
+        <link rel="stylesheet" href="style.css" />
+        <!--i am  going to use bootstrap for some small parts only-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="nav" id="nav">
+            <div class="nav-container">
+                    <a class="brand" href="#">Thineth Online Marketing</a>
+                
+                <div class="nav-container-item2">
+                    <button class="toggle-btn" type="button" onclick="toggleSidebar()">
+                        ☰ Menu
+                    </button>
+                </div>
+                
+            </div>
+        </nav>
+
+        <!--Sidenav-->
+        <div class="side-nav" id="sidebar">
+            <img src="Images/spicy-food (1).png"  height="50" width="50" alt=""><br/>
+            <br/>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#product">Products</a>
+            <a href="#contact">Contact</a>
+            <!--built in button in bootstrap-->
+            <a class="side-nav-link" href="addtocart.html">
+                <button class="btn btn-outline-success" type="button"> 🛒 Cart</button>
+            </a>
+            <a class="side-nav-link" href="login.html">
+                <button class="btn btn-outline-success">Login</button>
+            </a>
+        </div>
+
+        <!--Starting Home-->
+        <section id="home">
+            <h1 class="text-center text-white">ORGANIC SPICES</h1>
+            <p class="text-center">🌱Introducing Thineth Online Marketing, specializing in 100% organic foods. Experience the natural goodness and enhance your culinary delights with our premium offerings. Start your healthy journey today! 🌿🛒</p>
+            <div class="input-group m-4">
+              <input type="text" class="form-control" placeholder="Email Address" />
+              <button class="btn signin">Get Started</button>
+            </div>
+        </section>
+        <!--Ending Home-->
+
+        <!--Starting About-->
+        <section id="about">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                <img src="Images/about.png" class="img-fluid" alt="Organic Image" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-2 my-5">
+                <h1>ABOUT US</h1>
+                <p>
+                    Welcome to Thineth Online Marketing, your trusted source for high-quality, 
+                    homegrown spices in the heart of Sri Lanka. Nestled in the vibrant town of Weligama, 
+                    we take pride in offering 100% organic spices, cultivated with care and tradition. 
+                    Our main products – goraka, cinnamon, and black pepper – are harvested from our family-run farms, 
+                    ensuring unmatched freshness and flavor in every package. We believe that the best spices don’t have to be expensive, 
+                    which is why we offer our products at affordable prices, without ever compromising on quality. Whether you're looking for our signature spices or a variety of other locally-sourced herbs and seasonings, 
+                    we’re here to bring the authentic taste of Sri Lankan spices straight to your kitchen. Taste the difference that truly natural, homemade spices can make!
+                </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Ending About-->
+
+        <!--Starting Product-->
+        <section id="product">
+            <div class="container m-5">
+            <h1 class="text-center my-5">OUR PRODUCTS</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img1.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Turmeric Powder (100 g)<br /><br /><b
+                        >Rs.120</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Turmeric Powder" 
+                        data-price="120" 
+                        data-image="Images/img1.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img2.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Red Chilli Powder (100 g)<br /><br /><b
+                        >Rs.190</b
+                        >
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Red Chilli Powder" 
+                        data-price="190" 
+                        data-image="Images/img2.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img3.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Curry Powder (100 g)<br /><br /><b
+                        >Rs.220</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Curry Powder" 
+                        data-price="220" 
+                        data-image="Images/img3.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img4.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Cinnamon Powder (100 g)<br /><br /><b
+                        >Rs.300</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Cinnamon Powder" 
+                        data-price="300" 
+                        data-image="Images/img4.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img5.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Mustard Powder (100 g)<br /><br /><b
+                        >Rs.160</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Mustard Powder" 
+                        data-price="160" 
+                        data-image="Images/img5.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img6.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Black Peper Powder(100 g)<br /><br /><b
+                        >Rs.420</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Black Peper Powder" 
+                        data-price="420" 
+                        data-image="Images/img6.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img7.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Coriander Powder (100 g)<br /><br /><b
+                        >Rs.200</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Coriander Powder" 
+                        data-price="200" 
+                        data-image="Images/img7.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img8.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Cloves (50 g)<br /><br /><b
+                        >Rs.350</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Cloves" 
+                        data-price="350" 
+                        data-image="Images/img8.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-12">
+                <div class="card" style="width: 23rem">
+                    <img src="Images/img9.png" class="card-img-top" />
+                    <div class="card-body text-center">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">
+                        Goraka Cream (100 g)<br /><br /><b
+                        >Rs.100</b>
+                    </p>
+                    <a href="#products" class="btn signin" style="margin: 5px" onclick="buyNow()">Buy Now</a>
+                    <a href="#products" 
+                        class="btn sign add-to-cart" 
+                        data-name="Goraka Cream" 
+                        data-price="100" 
+                        data-image="Images/img9.png" 
+                        style="margin: 5px">Add to Cart</a>
+                    </div>
+                </div>
+                </div>
+    
+            </div>
+        </section>
+        <!--Ending Product-->
+        <!-- Deal of the week section with timer -->
+    <div class="deal_ofthe_week">
+        <div class="container">
+          <div class="row align-items-center"> 
+            <div class="col-lg-6">
+              <div class="deal_ofthe_week_img">
+                <img src="Images/contact.jpg" alt="First Image" class="image image1" height="100%" width="90%">
+              </div>
+            </div>
+            <div class="col-lg-6 text-right deal_ofthe_week_col">
+              <div class="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
+                <div class="section_title">
+                  <h2>
+                    Deal Of The Week
+                  </h2>
+                </div>
+                <ul class="timer">
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="day" class="timer_num">03</div>
+                    <div class="timer_unit">Days</div>
+                  </li>
+  
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="hour" class="timer_num">15</div>
+                    <div class="timer_unit">Hours</div>
+                  </li>
+  
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="minute" class="timer_num">45</div>
+                    <div class="timer_unit">Minutes</div>
+                  </li>
+  
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="second" class="timer_num">23</div>
+                    <div class="timer_unit">Seconds</div>
+                  </li>
+                </ul>
+            
+                <div class="red_button deal_of_the_week_button btn sign">Shop Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- JavaScript for Timer -->
+    <script>
+        const countdownDate = new Date("Oct 31, 2024 23:59:59").getTime();
+  
+        const timerInterval = setInterval(() => {
+          const now = new Date().getTime();
+          const distance = countdownDate - now;
+  
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+          document.getElementById("day").innerHTML = days;
+          document.getElementById("hour").innerHTML = hours;
+          document.getElementById("minute").innerHTML = minutes;
+          document.getElementById("second").innerHTML = seconds;
+  
+          if (distance < 0) {
+            clearInterval(timerInterval);
+            document.querySelector(".timer").innerHTML = "Deal Expired";
+          }
+        }, 1000);
+    </script>
+    <!--Ending Deal of the week-->
+
+    <!--Starting Contact-->
+    <section id="contact">
+        <div class="container box">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+             
+                 <img src="Images/contact us.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <h1 class="contact-h1">CONTACT US</h1>
+              <form class="mb-3">
+                <input type="text" class="form-control" placeholder="Enter your name">
+                <input type="email" class="form-control" placeholder="Enter your mail">
+                <textarea class="form-control" placeholder="Enter your Message"></textarea>
+                <button class="btn signin form-control">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Ending Contact-->
+  
+      <!--Starting footer-->
+      <footer>Copyright &copy; 2024. All rights Reserved Nimesh Akalanka</footer>
+      <!--Ending footer-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+      <script>
+        // side-nav toggle
+        function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          if (sidebar.style.display === "none" || !sidebar.style.display) {
+            sidebar.style.display = "block";
+          } else {
+            sidebar.style.display = "none";
+          }
+        }
+        // hide side-nav on smaller screens
+        function adjustSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          if (window.innerWidth <= 768) {
+            sidebar.style.display = "none";
+          } else {
+            sidebar.style.display = "block";
+          }
+        }
+  
+        // check width 
+        window.addEventListener('load', adjustSidebar);
+        window.addEventListener('resize', adjustSidebar);
+
+        // add to cart
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      
+        addToCartButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const productName = this.getAttribute('data-name');
+            const productPrice = this.getAttribute('data-price');
+            const productImage = this.getAttribute('data-image');
+      
+            
+            const product = {
+              name: productName,
+              price: productPrice,
+              image: productImage
+            };
+      
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+      
+            alert(productName + " has been added to your cart!");
+          });
+        });
+
+        function buyNow() {
+            alert("First add all items to cart and then buy...");
+        }
+      </script>
+
+    </body>
+</html>

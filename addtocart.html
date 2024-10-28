@@ -53,7 +53,7 @@
       <div class="text-center my-3">
         <a href="Index.html#product" class="btn btn-success">Continue Shopping</a>
         <button class="btn btn-danger" id="clear-cart">Clear Cart</button><br/><br/>
-        <a href="checkout.html" class="btn btn-success" style="background: blue;">Checkout</a>
+        <a href="checkout.html" class="btn btn-success" style="background: blue;"  onclick="checkout()">Checkout</a>
       </div>
     </div>
     
@@ -115,6 +115,10 @@
         // check width 
         window.addEventListener('load', adjustSidebar);
         window.addEventListener('resize', adjustSidebar);
+
+      function checkout(){
+          alert("Log In before checkout items..");
+        }
     </script>
   </body>
 </html>

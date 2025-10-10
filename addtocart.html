@@ -102,7 +102,6 @@
             sidebar.style.display = "none";
           }
         }
-        // hide side-nav on smaller screens
         function adjustSidebar() {
           const sidebar = document.getElementById("sidebar");
           if (window.innerWidth <= 768) {
@@ -112,7 +111,6 @@
           }
         }
   
-        // check width 
         window.addEventListener('load', adjustSidebar);
         window.addEventListener('resize', adjustSidebar);
 
@@ -122,3 +120,4 @@
     </script>
   </body>
 </html>
+
